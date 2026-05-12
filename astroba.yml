@@ -1,6 +1,7 @@
 name: astroba
 channels:
-  - defaults
+  - conda-forge
+  - astropy
 dependencies:
   - python
   - pip
@@ -11,6 +12,6 @@ dependencies:
   - scikit-image
   - scipy
   - tqdm
-  - conda-forge::regions
+  - regions
   - pip:
     - llc
