@@ -2,11 +2,6 @@
 description: "Use when running or troubleshooting the configure script, verifying that placeholder strings ([GALAXY], [AUTHOR], [INSTITUTION], etc.) exist correctly in notebooks, checking which notebooks have been configured vs. still contain raw placeholders, or understanding what configure.py does."
 name: "Configure Helper"
 tools: [read, search, execute]
-hooks:
-  PreToolUse:
-    - type: command
-      command: ".github/hooks/require-configure-approval.sh"
-      timeout: 10
 argument-hint: "What you need help with (e.g., 'run configure for NGC 3568 by Will Waldron at UT Austin' or 'check which notebooks still have unconfigured placeholders')"
 ---
 

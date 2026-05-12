@@ -3,7 +3,6 @@ description: "Create a new pipeline notebook for the galaxy reduction pipeline w
 name: "New Pipeline Notebook"
 argument-hint: "Notebook name, purpose, and optional pipeline position (e.g., 'StarCatalogBuilder – builds star catalog from GAIA data, runs in astroba, position 4')"
 agent: "agent"
-tools: [edit_notebook_file, create_file, file_search]
 ---
 
 Create a new Jupyter notebook for the galaxy reduction pipeline following all conventions in [notebooks.instructions.md](../instructions/notebooks.instructions.md) and [python-style.instructions.md](../instructions/python-style.instructions.md).

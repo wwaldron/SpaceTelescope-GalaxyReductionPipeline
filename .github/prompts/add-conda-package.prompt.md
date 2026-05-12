@@ -3,7 +3,6 @@ description: "Add a package to the correct conda environment YML file (astroba.y
 name: "Add Conda Package"
 argument-hint: "Package name and target environment (e.g., 'scipy to astroba' or 'torchvision to dcr')"
 agent: "agent"
-tools: [read_file, replace_string_in_file, multi_replace_string_in_file]
 ---
 
 Add a package to the appropriate conda environment YML file following the conventions in [conda-envs.instructions.md](../instructions/conda-envs.instructions.md).
@@ -25,17 +24,11 @@ Read the current contents of the appropriate YML file to understand the existing
 
 ## Step 3 — Apply Channel and Placement Rules
 
-### For `astroba.yml`
-- Channels in order: `conda-forge`, `astropy` (do **not** add `defaults`)
-- Add new packages from `conda-forge` first; use `astropy` channel only for packages exclusive to it
-- Do not pin versions unless a specific compatibility issue requires it
-- Place in the `dependencies:` list alphabetically within its logical group
+Follow the channel ordering, version pinning, and placement rules in [conda-envs.instructions.md](../instructions/conda-envs.instructions.md).
 
-### For `dcr.yml`
-- Channels in order: `conda-forge`, `pytorch`
-- GPU/driver-sensitive packages (PyTorch, CUDA, cuDNN) must be pinned together
-- Use `conda-forge::package` prefix only when a package is unavailable in listed channels
-- Pin `mkl` to avoid MKL/OpenBLAS conflicts (currently `mkl=2023`)
+Key reminders:
+- For `astroba.yml`: do **not** add `defaults` as a channel.
+- For `dcr.yml`: GPU/driver-sensitive packages (PyTorch, CUDA) must be pinned together.
 
 ### pip packages
 - If the package is only available on pip (or must be installed from a git repo), add it under the `pip:` subsection at the bottom of `dependencies:`
