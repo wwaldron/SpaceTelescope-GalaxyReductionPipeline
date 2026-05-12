@@ -72,3 +72,34 @@ The [`Notebooks/`](../Notebooks/) directory contains symlinks to all of the abov
 - NED catalog data: `Data/NED/`
 - GAIA catalog data: `Data/GAIA/`
 - DS9 region files and FOV overlays: `Images/ProcessedImages/HST/DS9/`
+
+## External Documentation
+
+The conda environments may not use the most up-to-date package versions. Always cross-reference the installed version against these references when looking up parameters or APIs.
+
+### HST Notebooks & General Reference
+
+- [STScI HST Notebooks](https://spacetelescope.github.io/hst_notebooks/)
+- [HST Documentation Hub](https://www.stsci.edu/hst/documentation)
+- [MAST Archive](https://mast.stsci.edu/) — HST data download portal
+
+### Instrument Handbooks
+
+- [ACS Instrument Handbook](https://hst-docs.stsci.edu/display/ACSIHB/)
+- [WFC3 Instrument Handbook](https://hst-docs.stsci.edu/display/WFC3IHB)
+
+### Data Reduction Handbooks
+
+- [HST Data Handbook](https://hst-docs.stsci.edu/display/HSTDHB)
+- [ACS Data Handbook](https://hst-docs.stsci.edu/display/ACSDHB)
+- [WFC3 Data Handbook](https://hst-docs.stsci.edu/display/WFC3DHB)
+- [DrizzlePac Handbook](https://hst-docs.stsci.edu/drizzpac)
+
+### Software Documentation
+
+- [Astropy](https://docs.astropy.org/en/stable/index_user_docs.html)
+- [Astroquery](https://astroquery.readthedocs.io/en/stable/) — used for MAST and NED queries
+- [NED](https://ned.ipac.caltech.edu/) — NASA/IPAC Extragalactic Database
+- [photutils](https://photutils.readthedocs.io/en/stable/index.html)
+- [DrizzlePac](https://drizzlepac.readthedocs.io/en/latest/)
+- [DeepCR](https://deepcr.readthedocs.io/) — cosmic ray removal
