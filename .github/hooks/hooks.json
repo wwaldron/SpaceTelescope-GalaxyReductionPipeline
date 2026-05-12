@@ -1,0 +1,21 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "bash .github/hooks/require-configure-approval.sh",
+        "timeout": 10
+      },
+      {
+        "type": "command",
+        "command": "bash .github/hooks/prevent-fits-commit.sh",
+        "timeout": 10
+      },
+      {
+        "type": "command",
+        "command": "bash .github/hooks/guard-destructive-git.sh",
+        "timeout": 10
+      }
+    ]
+  }
+}
