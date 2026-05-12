@@ -115,3 +115,36 @@ parameters may need to be updated.
 1. [Image Reducer](Images/ImageReducer.ipynb)
 1. [NaN Pixel Inpainter](Images/ProcessedImages/HST/PythonNotebooks/DrizzledInpainter.ipynb) (May be skipped if no `NaN` regions in FOVs)
 1. [Photometry Checker](Images/ProcessedImages/HST/PythonNotebooks/PhotometryChecker.ipynb)
+
+## External Documentation
+
+> **Note:** The conda environments in this pipeline may not use the most up-to-date versions of
+> the packages listed below. Always check the installed version against the documentation for any
+> parameters or APIs that have changed.
+
+### HST Notebooks & General Reference
+
+- [STScI HST Notebooks](https://spacetelescope.github.io/hst_notebooks/)
+- [HST Documentation Hub](https://www.stsci.edu/hst/documentation)
+- [MAST Archive](https://mast.stsci.edu/) — HST data download portal
+
+### Instrument Handbooks
+
+- [ACS Instrument Handbook](https://hst-docs.stsci.edu/display/ACSIHB/)
+- [WFC3 Instrument Handbook](https://hst-docs.stsci.edu/display/WFC3IHB)
+
+### Data Reduction Handbooks
+
+- [HST Data Handbook](https://hst-docs.stsci.edu/display/HSTDHB)
+- [ACS Data Handbook](https://hst-docs.stsci.edu/display/ACSDHB)
+- [WFC3 Data Handbook](https://hst-docs.stsci.edu/display/WFC3DHB)
+- [DrizzlePac Handbook](https://hst-docs.stsci.edu/drizzpac)
+
+### Software Documentation
+
+- [Astropy](https://docs.astropy.org/en/stable/index_user_docs.html)
+- [Astroquery](https://astroquery.readthedocs.io/en/stable/) — used for MAST and NED queries
+- [NED](https://ned.ipac.caltech.edu/) — NASA/IPAC Extragalactic Database
+- [photutils](https://photutils.readthedocs.io/en/stable/index.html)
+- [DrizzlePac](https://drizzlepac.readthedocs.io/en/latest/)
+- [DeepCR](https://deepcr.readthedocs.io/) — cosmic ray removal
