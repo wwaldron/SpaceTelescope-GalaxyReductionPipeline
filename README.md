@@ -1,4 +1,4 @@
-# Galaxy Reduction
+# [GALAXY] - Galaxy Reduction
 
 This template repository is meant to provide some guidance in reducing space telescope galaxy data
 using Python Jupyter Notebooks. The repository is not meant to be a one-size-fits-all set of
